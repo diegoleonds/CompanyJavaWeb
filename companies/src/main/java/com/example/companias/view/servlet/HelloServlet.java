@@ -19,7 +19,7 @@ public class HelloServlet extends HttpServlet {
         response.setContentType("text/html");
 
         CompanyController controller = new CompanyController();
-        List<Company> companies = controller.getEntities(0, 0);
+        List<Company> companies = controller.getEntities(1, 1);
 
         // Hello
         PrintWriter out = response.getWriter();
